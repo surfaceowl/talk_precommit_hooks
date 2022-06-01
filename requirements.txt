@@ -3,3 +3,4 @@ jupyter-contrib-nbextensions==0.5.1
 rise==5.7.1                            # jupyter notebooks -> slides w/interactive code
 
 pre-commit==2.19.0                     # one of many git hooks packages; good docs
+black
