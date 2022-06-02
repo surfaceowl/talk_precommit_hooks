@@ -4,4 +4,5 @@ rise==5.7.1                            # jupyter notebooks -> slides w/interacti
 
 pre-commit==2.19.0                     # one of many git hooks packages; good docs
 black==22.3.0
+black[jupyter]==22.3.0
 pylint==2.14.0
