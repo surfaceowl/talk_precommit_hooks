@@ -1,2 +1,37 @@
 [tool.black]
+# https://black.readthedocs.io/en/stable/usage_and_configuration/the_basics.html
 line-length = 88
+target-version = ['py310']
+exclude = '''
+(
+  /(                  # exclude a few common directories in project root
+    | \.git
+    | venv
+  )/
+  | Procfile         # also separately exclude a file named Procfile in project root
+)
+'''
+
+[tool.pylint.master]
+# https://pylint.pycqa.org/en/latest/user_guide/configuration/all-options.html
+argument-naming-style = "snake_case"
+attr-naming-style = "snake_case"
+class-naming-style = "PascalCase"
+const-naming-style = "UPPER_CASE"
+confidence = "CONTROL_FLOW"
+docstring-min-length = 1
+enable = "all"
+exit-zero = "true"
+function-naming-style = "snake_case"
+good-names = ["ROI", "total_FTE", "s3", "x"]
+ignore-paths = [".hypothesis", ".pytest_cache", "client", "server", "tmp", "venv"]
+jobs = 0
+load-plugins = []
+method-naming-style = "snake_case"
+module-naming-style = "snake_case"
+msg-template = "ln {line:>5}  {msg_id}  {msg}  in obj:{obj}"
+output-format = ["colorized"]
+recursive = "true"
+report = "true"
+score = "true"
+variable-naming-style = "snake_case"
