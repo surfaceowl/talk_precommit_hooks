@@ -1,9 +1,9 @@
 jupyter==1.0.0                           # for the talk slides
 jupyter-contrib-nbextensions==0.5.1
-jupyter_nbextensions_configurator==0.4.1
+jupyter_nbextensions_configurator==0.5.0
 matplotlib==3.5.2
 rise==5.7.1                              # jupyter notebooks -> slides w/interactive code
 
-pre-commit==2.19.0                       # one of many git hooks packages; good docs
+pre-commit==2.20.0                       # one of many git hooks packages; good docs
 black[jupyter]==22.6.0                   # black formatting with additional jupyter option
 pylint==2.14.5
